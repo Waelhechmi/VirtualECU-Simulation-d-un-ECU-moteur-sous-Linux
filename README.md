@@ -15,18 +15,11 @@ Le projet est conçu pour servir de base à la simulation moteur, à l’apprent
 
 ---
 
-## Structure du projet
+## System Architecture
 
-ECU_Sim/
-├─ main.c # Boucle principale et définition des tâches
-├─ timing.c/h # Scheduler multi-tâches
-├─ sensors.c/h # Simulation des capteurs moteur
-├─ controller.c/h # PID et logique de contrôle
-├─ logger.c/h # Journalisation dans CSV
-├─ engine_data.csv # Fichier généré avec les données simulées
-└─ README.md
+The UML diagram below shows the modular architecture of **VirtualECU v2.0**, including the Scheduler, Sensors, Controller, and Logger modules:
 
-
+![VirtualECU v2.0 UML Diagram](planECU.png)
 
 
 ---
