@@ -1,4 +1,0 @@
-config BR2_PACKAGE_VIRTUALECU
-    bool "Virtual ECU simulator"
-    help
-      Software simulation of an engine ECU with virtual sensors and actuators.
