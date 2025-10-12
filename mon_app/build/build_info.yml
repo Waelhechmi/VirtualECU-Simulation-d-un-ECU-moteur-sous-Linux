@@ -1,0 +1,60 @@
+cmake:
+  application:
+    configuration-dir: '/home/wael/zephyrproject/mon_app'
+    source-dir: '/home/wael/zephyrproject/mon_app'
+  board:
+    name: 'qemu_cortex_m3'
+    path:
+     - '/home/wael/zephyrproject/zephyr/boards/qemu/cortex_m3'
+    qualifiers: 'ti_lm3s6965'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/wael/zephyrproject/mon_app/dts/bindings'
+     - '/home/wael/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/wael/zephyrproject/zephyr/boards/qemu/cortex_m3/qemu_cortex_m3.dts'
+    include-dirs:
+     - '/home/wael/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/wael/zephyrproject/modules/hal/atmel/include'
+     - '/home/wael/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/wael/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/wael/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/wael/zephyrproject/modules/hal/microchip/include'
+     - '/home/wael/zephyrproject/modules/hal/microchip/dts'
+     - '/home/wael/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/wael/zephyrproject/modules/hal/nxp/dts'
+     - '/home/wael/zephyrproject/modules/hal/stm32/dts'
+     - '/home/wael/zephyrproject/modules/hal/ti/dts'
+     - '/home/wael/zephyrproject/mon_app/dts'
+     - '/home/wael/zephyrproject/zephyr/include'
+     - '/home/wael/zephyrproject/zephyr/include/zephyr'
+     - '/home/wael/zephyrproject/zephyr/dts/common'
+     - '/home/wael/zephyrproject/zephyr/dts/vendor'
+     - '/home/wael/zephyrproject/zephyr/dts/rx'
+     - '/home/wael/zephyrproject/zephyr/dts/x86'
+     - '/home/wael/zephyrproject/zephyr/dts/xtensa'
+     - '/home/wael/zephyrproject/zephyr/dts/sparc'
+     - '/home/wael/zephyrproject/zephyr/dts/riscv'
+     - '/home/wael/zephyrproject/zephyr/dts/posix'
+     - '/home/wael/zephyrproject/zephyr/dts/arm64'
+     - '/home/wael/zephyrproject/zephyr/dts/arm'
+     - '/home/wael/zephyrproject/zephyr/dts/arc'
+     - '/home/wael/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/wael/zephyrproject/zephyr/boards/qemu/cortex_m3/qemu_cortex_m3_defconfig'
+     - '/home/wael/zephyrproject/mon_app/prj.conf'
+    user-files:
+     - '/home/wael/zephyrproject/mon_app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/wael/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/home/wael/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/wael/zephyrproject/.venv/bin/west build -b qemu_cortex_m3 .'
+  topdir: '/home/wael/zephyrproject'
+  version: '1.5.0'
